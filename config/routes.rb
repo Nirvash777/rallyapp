@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  resources :topics
   get 'welcome/index'
   
   
-  root 'welcome#index'
+  root 'topics#index'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
